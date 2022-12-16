@@ -1,0 +1,301 @@
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    #header {
+        background-color: #1A65A1;
+        width: 100%;
+        height: 120px;
+    }
+
+    #header-nav {
+        padding: 60px 0 0 0;
+        display: flex;
+        margin: auto;
+        width: 80%;
+    }
+
+    #header-nav>img {
+        width: 30px;
+        height: 32px;
+    }
+
+    #header-nav>h4 {
+        color: white;
+        line-height: 32px;
+        margin: 0 0 0 10px;
+    }
+
+    #header-nav>ul {
+        list-style: none;
+        display: flex;
+        margin: 0 0 0 200px;
+    }
+
+    #header-nav>ul>li {
+        margin: 0 50px 0 0;
+    }
+
+    #header-nav>ul>li>a {
+        border-radius: 4px;
+        padding: 3px 20px 3px 20px;
+        line-height: 32px;
+        color: white;
+        text-decoration: none;
+    }
+
+    #header-nav>ul>li>a:hover {
+        background-color: #006FF2;
+    }
+
+    #final-nav {
+        display: none;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #BDBDCB;
+        border-radius: 4px;
+    }
+    
+    #final-drop-down:hover #final-nav {
+        display: block;
+    }
+    
+    #final-nav>li {
+        border-bottom: 1px solid #EBEBEB;
+        width: 70%;
+        margin: auto;
+    }
+    
+    #final-nav>li>a {
+        text-decoration: none;
+        color: black;
+        line-height: 45px;
+    }
+    
+    #final-nav>li>a:hover {
+        color: #006FF2;
+    }
+
+    #main {
+        margin: 30px auto;
+        width: 80%;
+    }
+
+    #main>h3 {
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: -0.03em;
+        color: #171529;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        padding: 20px 0 20px 0;
+    }
+
+    .creation-title {
+        border: 1px solid #BDBDCB;
+        border-radius: 4px;
+    }
+
+    .creation-content {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #EBEBEB;
+    }
+
+    .creation-content>h4 {
+        width: 200px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 42px;
+        color: #1A65A1;
+    }
+
+    .creation-content>ul {
+        display: flex;
+    }
+
+    .creation-content>ul>li>p {
+        margin: 0 20px 0 20px;
+    }
+
+    .creation-content>ul>li {
+        line-height: 42px;
+    }
+
+    .creation-content>ul>li>i {
+        text-align: center;
+        border-radius: 4px;
+        line-height: 24px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        width: 24px;
+        height: 24px;
+        margin: 10px 2.5px 0 2.5px;
+    }
+
+    .creation-content>ul>li>i:hover {
+        background-color: #1A65A1;
+    }
+
+    .large-box {
+        box-sizing: border-box;
+        width: 180px;
+        height: 42px;
+        margin: 0 2.5px 0 2.5px;
+        border: 1px solid #BDBDCB;
+        border-radius: 4px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .middle-box {
+        box-sizing: border-box;
+        width: 140px;
+        height: 42px;
+        margin: 0 2.5px 0 2.5px;
+        border: 1px solid #BDBDCB;
+        border-radius: 4px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .small-box {
+        box-sizing: border-box;
+        width: 100px;
+        height: 42px;
+        margin: 0 2.5px 0 2.5px;
+        border: 1px solid #BDBDCB;
+        border-radius: 4px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .semi-title {
+        margin: 0 20px 0 20px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        /* identical to box height */
+        color: #171529;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    #reset-btn {
+        background-color: #171529;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        width: 180px;
+        height: 42px;
+    }
+
+    #reset-btn:hover {
+        background-color: #1A65A1;
+    }
+
+    #save-btn {
+        background-color: #BDBDCB;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        width: 180px;
+        height: 42px;
+    }
+
+    #go-btn {
+        background-color: #BDBDCB;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        width: 360px;
+        height: 42px;
+    }
+
+    #creation-btn {
+        float: right;
+        margin: 10px 0 0 0;
+    }
+
+    #creation-btn>button {
+        margin: 10px 0 0 10px;
+    }
+
+    #creation-nav {
+        display: none;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #BDBDCB;
+        border-radius: 4px;
+    }
+
+    #creation-drop-down:hover #creation-nav {
+        display: block;
+    }
+
+    #creation-nav>li {
+        border-bottom: 1px solid #EBEBEB;
+        width: 70%;
+        margin: auto;
+    }
+
+    #creation-nav>li>a {
+        text-decoration: none;
+        color: black;
+        line-height: 45px;
+    }
+
+    #creation-nav>li>a:hover {
+        color: #006FF2;
+    }
+
+    .now-location {
+        background-color: #006FF2;
+    }
+
+    .red-point {
+        color: red;
+    }
+
+    @media (max-width:1600px) {
+        #header-nav>h4 {
+            display: none;
+        }   
+
+        #header-nav>ul {
+            margin: 0 0 0 100px;
+        }
+    }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e5b3beccf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/admin-user.css">
+    <title>admin-company</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-nav">
+            <img src="./img/image 7.png" alt="">
+            <h4>Auto Stowage Planning Service</h4>
+            <ul>
+                <li><a href="admin-login.html">Admin</a></li>
+                <li><a class="now-location" href="./admin-user.html">User</a></li>
+                <li><a href="./admin-company.html">Company</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <h3>User</h3>
+        <div class="title">
+            <div class="content">
+                <ul>
+                    <li class="semi-title">Company</li>
+                    <li>
+                        <select class="large-box" name="" id="">
+                            <option value="">Code</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button>Retrieve</button>
+                    </li>
+                    <li>
+                        <button>Update</button>
+                    </li>
+                    <li>
+                        <button>Delete</button>
+                    </li>
+                    <li>
+                        <button>New</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contents-table">
+        <table style="border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #1A65A1; border: 1px solid #1A65A1; color: white; height: 60px;">
+                <td>
+                    SEQ
+                </td>
+                <td>
+                    <input class="chkbox" type="checkbox" onclick="selectAll(this)" name="chk">
+                </td>
+                <td>
+                    Company<br>
+                    Code
+                </td>
+                <td>
+                    Company<br>
+                    Name
+                </td>
+                <td>
+                    User<br>
+                    Name
+                </td>
+                <td>
+                    ID
+                </td>
+                <td>
+                    User<br>
+                    Group
+                </td>
+                <td>
+                    Password
+                </td>
+                <td>
+                    Email
+                </td>
+                <td>
+                    Contact
+                </td>
+                <td>
+                    Last Date
+                </td>
+                <td>
+                    Create Date
+                </td>
+            </tr>
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    1
+                </td>
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    NSL
+                </td>
+                <td>
+                    남성해운
+                </td>
+                <td>
+                    홍길동
+                </td>
+                <td>
+                    HGD01
+                </td>
+                <td>
+                    Super
+                </td>
+                <td>
+                    H******
+                </td>
+                <td>
+                    hgdQabc.com
+                </td>
+                <td>
+                    02-123-456
+                </td>
+                <td>
+                    2021. 08. 30
+                </td>
+                <td>
+                    2021. 07. 30
+                </td>
+            </tr>            
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    1
+                </td>
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    NSL
+                </td>
+                <td>
+                    남성해운
+                </td>
+                <td>
+                    홍길동
+                </td>
+                <td>
+                    HGD01
+                </td>
+                <td>
+                    Super
+                </td>
+                <td>
+                    H******
+                </td>
+                <td>
+                    hgdQabc.com
+                </td>
+                <td>
+                    02-123-456
+                </td>
+                <td>
+                    2021. 08. 30
+                </td>
+                <td>
+                    2021. 07. 30
+                </td>
+            </tr>            
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    1
+                </td>
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    NSL
+                </td>
+                <td>
+                    남성해운
+                </td>
+                <td>
+                    홍길동
+                </td>
+                <td>
+                    HGD01
+                </td>
+                <td>
+                    Super
+                </td>
+                <td>
+                    H******
+                </td>
+                <td>
+                    hgdQabc.com
+                </td>
+                <td>
+                    02-123-456
+                </td>
+                <td>
+                    2021. 08. 30
+                </td>
+                <td>
+                    2021. 07. 30
+                </td>
+            </tr>            
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    1
+                </td>
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    NSL
+                </td>
+                <td>
+                    남성해운
+                </td>
+                <td>
+                    홍길동
+                </td>
+                <td>
+                    HGD01
+                </td>
+                <td>
+                    Super
+                </td>
+                <td>
+                    H******
+                </td>
+                <td>
+                    hgdQabc.com
+                </td>
+                <td>
+                    02-123-456
+                </td>
+                <td>
+                    2021. 08. 30
+                </td>
+                <td>
+                    2021. 07. 30
+                </td>
+            </tr>            
+        </table>
+    </div>
+    <script src="./js/admin-user.js"></script>
+</body>
+
+</html>

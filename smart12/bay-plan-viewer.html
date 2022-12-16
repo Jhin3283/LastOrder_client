@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e5b3beccf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bay-plan-viewer.css">
+    <title>Bay Plan Viewer</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-nav">
+            <img src="./img/image 7.png" alt="">
+            <h4>Last Order Control Service</h4>
+            <ul>
+                <li id="bpv-drop-down"><a href="./Inquiry.html">Inquiry</a>
+                    <ul id="bpv-nav">
+                        <li>
+                            <a href="./creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="./inquiry.html">Inquiry</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./analysis.html">Analysis</a></li>
+                <li><a href="./confirm.html">Confirm</a></li>
+                <li><a href="./summary.html">Summary</a></li>
+                <li id="final-drop-down"><a class="now-location" href="./bay-plan-viewer.html">Bay Plan Viewer</a>
+                    <ul id="final-nav">
+                        <li>
+                            <a>Final Bay Plan</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="http://112.218.175.109:8085/">AIS 운항데이터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <h3>Bay Plan Selection</h3>
+        <div class="bpv-title">
+            <div class="bpv-content">
+                <ul>
+                    <li class="semi-title">VVD</li>
+                    <li>
+                        <input class="large-box" type="text" id="vvd-input">
+                    </li>
+                    <li class="semi-title">Target Port</li>
+                    <li>
+                        <input class="large-box" type="text" id="port-input">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="retrieve-btn" onclick="reTrieve()">Retrieve</button>
+    </div>
+    <div id="contents-table">
+        <table style="border-collapse: collapse;">
+            <tr style="background-color: #1A65A1; border: 1px solid #1A65A1; color: white; height: 60px;">
+                <td>
+                    <input class="chkbox" type="checkbox" onclick="selectAll(this)" name="chk">
+                </td>
+                <td>
+                    VVD
+                </td>
+                <td>
+                    Target<br>
+                    Port
+                </td>
+                <td>
+                    Target Port<br>
+                    ETA(ATB)
+                </td>
+                <td>
+                    Loading Vol.<br>
+                    (TEU)
+                </td>
+                <td>
+                    S. A.
+                </td>
+                <td>
+                    Status
+                </td>
+                <td>
+                    Creation Time
+                </td>
+            </tr>
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    HOSP2201E
+                </td>
+                <td>
+                    KRPUS
+                </td>
+                <td>
+                    2022. 7. 12. 1800
+                </td>
+                <td>
+                    D4 X 4
+                </td>
+                <td>
+                    Y
+                </td>
+                <td>
+                    Ready
+                </td>
+                <td>
+                    2022. 7. 10. 1205
+                </td>
+            </tr>
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    HOSP2201E
+                </td>
+                <td>
+                    KRPUS
+                </td>
+                <td>
+                    2022. 7. 12. 1800
+                </td>
+                <td>
+                    D4 X 4
+                </td>
+                <td>
+                    Y
+                </td>
+                <td>
+                    Ready
+                </td>
+                <td>
+                    2022. 7. 10. 1205
+                </td>
+            </tr>
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    HOSP2201E
+                </td>
+                <td>
+                    KRPUS
+                </td>
+                <td>
+                    2022. 7. 12. 1800
+                </td>
+                <td>
+                    D4 X 4
+                </td>
+                <td>
+                    Y
+                </td>
+                <td>
+                    Ready
+                </td>
+                <td>
+                    2022. 7. 10. 1205
+                </td>
+            </tr>
+            <tr style="background-color: white; border: 1px solid white; border: 1px solid #EBEBEB;">
+                <td>
+                    <input class="chkbox" type="checkbox" name="chk">
+                </td>
+                <td>
+                    HOSP2201E
+                </td>
+                <td>
+                    KRPUS
+                </td>
+                <td>
+                    2022. 7. 12. 1800
+                </td>
+                <td>
+                    D4 X 4
+                </td>
+                <td>
+                    Y
+                </td>
+                <td>
+                    Ready
+                </td>
+                <td>
+                    2022. 7. 10. 1205
+                </td>
+            </tr>
+        </table>
+        <a href="./s.a.result-viewer.html"><button>S. A. Result Viewer</button></a>
+        <a href="./final-bay-plan.html"><button>Bay Plan Viewer</button></a>
+    </div>
+    <div id="modal-back">
+        <div id="empty-input">
+            <i class="fa-solid fa-xmark" onclick="Close()"></i>
+            <p>Please fill in <span class="red-text">all blank</span>. (VVD or Target Port)</p>
+        </div>
+    </div>
+    <script src="./js/bay-plan-viewer.js"></script>
+</body>
+
+</html>

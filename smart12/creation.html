@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e5b3beccf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/creation.css">
+    <title>Creation</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-nav">
+            <img src="./img/image 7.png" alt="">
+            <h4>Last Order Control Service</h4>
+            <ul>
+                <li id="creation-drop-down"><a class="now-location" href="">Creation</a>
+                    <ul id="creation-nav">
+                        <li>
+                            <a href="./creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="./inquiry.html">Inquiry</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./analysis.html">Analysis</a></li>
+                <li><a href="./confirm.html">Confirm</a></li>
+                <li><a href="./summary.html">Summary</a></li>
+                <li id="final-drop-down"><a href="./bay-plan-viewer.html">Bay Plan Viewer</a>
+                    <ul id="final-nav">
+                        <li>
+                            <a>Final Bay Plan</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="http://112.218.175.109:8085/">AIS 운항데이터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <h3>Cargo Information</h3>
+        <div class="creation-title">
+            <div class="creation-content">
+                <h4>POL / POD</h4>
+                <ul>
+                    <li class="semi-title">POL Code <span class="red-point">*</span></li>
+                    <li>
+                        <input class="large-box" type="text" value="" id="required1" name="pol_code">
+                    </li>
+                    <li class="semi-title">POD Code <span class="red-point">*</span></li>
+                    <li>
+                        <input class="large-box" type="text" value="" id="required2" name="pod_code">
+                    </li>
+                </ul>
+            </div>
+            <div class="creation-content">
+                <h4>Container TY/SZ</h4>
+                <ul>
+                    <li class="semi-title">Type</li>
+                    <li>
+                        <select class="small-box" name="TY" id="">
+                            <option value="">=선택=</option>
+                            <option value="GP">GP</option>
+                            <option value="RE">RE</option>
+                            <option value="UT">UT</option>
+                            <option value="PC">PC</option>
+                            <option value="TN">TN</option>
+                        </select>
+                    </li>
+                    <li class="semi-title">Size</li>
+                    <li>
+                        <select class="small-box" name="SZ" id="" required>
+                            <option value="">=선택=</option>
+                            <option value="20">20ft</option>
+                            <option value="40">40ft</option>
+                        </select>
+                    </li>
+                    <li class="semi-title">WGT <span class="red-point">*</span></li>
+                    <li>
+                        <input class="small-box" type="text" value="" id="required3" name="WGT">
+                    </li>
+                    <li class="semi-title">Volume</li>
+                    <li style="display: flex;">
+                        <p id="count" name="convolume">1</p>
+                        <i id="plus" class="fa-solid fa-plus"></i>
+                        <i id="minus" class="fa-solid fa-minus"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="creation-content">
+                <h4>Container No.<span style="font-weight: 300;">(Optional)</span> <span class="red-point">*</span></h4>
+                <ul style="margin-left: 20px;">
+                    <li id="con1">
+                        <input class="middle-box" type="text" value="" id="required4" placeholder=" Container1"
+                            name="con1">
+                    </li>
+                    <li id="con2" style="display: none;">
+                        <input class="middle-box" type="text" value="" placeholder=" Container2" name="con2">
+                    </li>
+                    <li id="con3" style="display: none;">
+                        <input class="middle-box" type="text" value="" placeholder=" Container3" name="con3">
+                    </li>
+                    <li id="con4" style="display: none;">
+                        <input class="middle-box" type="text" value="" placeholder=" Container4" name="con4">
+                    </li>
+                </ul>
+            </div>
+            <div class="creation-content">
+                <h4>Shipper<span style="font-weight: 300;">(Optional)</span></h4>
+                <ul>
+                    <li class="semi-title">Shipper Code</li>
+                    <li>
+                        <input class="large-box" type="text" value="" name="shipper_code">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Vessel Select</h3>
+        <div class="creation-title">
+            <div class="creation-content">
+                <h4>Vessel</h4>
+                <ul>
+                    <li class="semi-title">Vessel Code</li>
+                    <li>
+                        <input type="text" name="vessel_code">
+                    </li>
+                </ul>
+            </div>
+            <div class="creation-content">
+                <h4>Voyage & Direction</h4>
+                <ul>
+                    <li class="semi-title">VVD <span class="red-point">*</span></li>
+                    <li>
+                        <input class="large-box" type="text" name="vvd" id="required5">
+                    </li>
+                </ul>
+            </div>
+            <div class="creation-content">
+                <h4>POL Terminal</h4>
+                <input type="text" style="border: none; margin: 0 200px 0 0;" value="">
+                <h4>POL ETB to ETD</h4>
+                <input type="text" style="border: none;" value="">
+                <i class="fa-solid fa-angle-right" style="line-height: 45px; margin: 0 50px 0 0;"></i>
+                <input type="text" style="border: none;" value="">
+            </div>
+        </div>
+        <div id="creation-btn">
+            <button id="reset-btn" onclick="Reset()">Reset</button>
+            <button id="save-btn" onclick="activeGoBtn()" disabled>Save</button>
+            <button id="go-btn" onclick="GoBtn()" disabled>Go S. A. Result</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/creation.js"></script>
+</body>
+
+</html>

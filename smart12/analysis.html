@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5e5b3beccf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/analysis.css" />
+    <title>Analysis</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="header-nav">
+        <img src="./img/image 7.png" alt="" />
+        <h4>Last Order Control Service</h4>
+        <ul>
+          <li id="analysis-drop-down">
+            <a href="./Inquiry.html">Inquiry</a>
+            <ul id="analysis-nav">
+              <li>
+                <a href="./creation.html">Creation</a>
+              </li>
+              <li>
+                <a href="./inquiry.html">Inquiry</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="now-location" href="./analysis.html">Analysis</a></li>
+          <li><a href="./confirm.html">Confirm</a></li>
+          <li><a href="./summary.html">Summary</a></li>
+          <li id="final-drop-down">
+            <a href="./bay-plan-viewer.html">Bay Plan Viewer</a>
+            <ul id="final-nav">
+              <li>
+                <a>Final Bay Plan</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="http://112.218.175.109:8085/">AIS 운항데이터</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      <h3>Status Target VVD</h3>
+      <div class="analysis-title">
+        <div class="analysis-content">
+          <ul>
+            <li class="semi-title">VVD</li>
+            <li>
+              <input class="large-box" type="text" value=" 2201E" />
+            </li>
+            <li class="semi-title">Loading Port</li>
+            <li>
+              <input class="large-box" type="text" />
+            </li>
+            <li class="semi-title">Discharging Port</li>
+            <li>
+              <input class="large-box" type="text" />
+            </li>
+            <li>
+              <button onclick="retrive_renderTable()">Retrieve</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="contents-table">
+      <table id="table1" style="border-collapse: collapse">
+        <tr
+          style="
+            background-color: #1a65a1;
+            border: 1px solid #1a65a1;
+            color: white;
+            height: 60px;
+          "
+        >
+          <td>
+            <input
+              class="chkbox"
+              type="checkbox"
+              onclick="selectAll(this)"
+              name="chk"
+            />
+          </td>
+          <td>VVD</td>
+          <td>POL</td>
+          <td>POD</td>
+          <td>Vol.</td>
+          <td>Cntr No.</td>
+          <td>Status</td>
+          <td>Creator</td>
+          <td>Creation Time</td>
+        </tr>
+      </table>
+      <button onclick="analysis_renderTable()">Call S. A. Result</button>
+      <div id="contents-table-2">
+        <h3
+          style="
+            font-family: 'Pretendard';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: -0.03em;
+            color: #171529;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            padding: 20px 0 20px 0;
+          "
+        >
+          Sensitivity Analysis Result
+        </h3>
+        <table style="border-collapse: collapse" id="table2">
+          <tr
+            style="
+              background-color: #1a65a1;
+              border: 1px solid #1a65a1;
+              color: white;
+              height: 60px;
+            "
+          >
+            <td>VVD</td>
+            <td>POL</td>
+            <td>POD</td>
+            <td>Container TY/SZ</td>
+            <td>Weight Tier</td>
+            <td>Vol.</td>
+          </tr>
+        </table>
+        <button onclick="Reset()">Reset</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/analysis.js"></script>
+  </body>
+</html>

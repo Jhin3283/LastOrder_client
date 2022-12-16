@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/5e5b3beccf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/confirm.css" />
+    <title>Confirm</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-nav">
+            <img src="./img/image 7.png" alt="" />
+            <h4>Last Order Control Service</h4>
+            <ul>
+                <li id="confirm-drop-down">
+                    <a href="./Inquiry.html">Inquiry</a>
+                    <ul id="confirm-nav">
+                        <li>
+                            <a href="./creation.html">Creation</a>
+                        </li>
+                        <li>
+                            <a href="./inquiry.html">Inquiry</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./analysis.html">Analysis</a></li>
+                <li><a class="now-location" href="./confirm.html">Confirm</a></li>
+                <li><a href="./summary.html">Summary</a></li>
+                <li id="final-drop-down">
+                    <a href="./bay-plan-viewer.html">Bay Plan Viewer</a>
+                    <ul id="final-nav">
+                        <li>
+                            <a>Final Bay Plan</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="http://112.218.175.109:8085/">AIS 운항데이터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <h3>Space Confirm</h3>
+        <div class="confirm-title">
+            <div class="confirm-content">
+                <ul>
+                    <li class="semi-title">VVD</li>
+                    <li>
+                        <input class="large-box" type="text" value="" />
+                    </li>
+                    <li class="semi-title">Loading Port</li>
+                    <li>
+                        <input class="large-box" type="text" value="" />
+                    </li>
+                    <li class="semi-title">Discharging Port</li>
+                    <li>
+                        <input class="large-box" type="text" value="" />
+                    </li>
+                    <li>
+                        <button onclick="ReTrieve()">Retrieve</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contents-table">
+        <table style="border-collapse: collapse; text-align: center">
+            <tr style="
+            background-color: #1a65a1;
+            border: 1px solid #1a65a1;
+            color: white;
+          ">
+                <td rowspan="2">POL</td>
+                <td rowspan="2">POD</td>
+                <td rowspan="2">Sel.</td>
+                <td rowspan="2">TY/SZ</td>
+                <td rowspan="2">Weight</td>
+                <td rowspan="2">
+                    Created<br />
+                    Vol.
+                </td>
+                <td colspan="2">Using Vol.</td>
+                <td rowspan="2">
+                    Remained<br />
+                    Vol.
+                </td>
+                <td rowspan="2">Status</td>
+            </tr>
+            <tr style="
+            background-color: #1a65a1;
+            border: 1px solid #1a65a1;
+            color: white;
+          ">
+                <td style="color: #bdbdcb">Occupied</td>
+                <td style="color: #bdbdcb">Updatd</td>
+            </tr>
+            <tr style="background-color: white; border: 1px solid #ebebeb">
+                <td style="border-right: 1px solid #ebebeb">KRPUS</td>
+                <td>SGSIN</td>
+                <td>
+                    <input class="chkbox" type="checkbox" />
+                </td>
+                <td>GP20</td>
+                <td>L</td>
+                <td style="color: #006ff2">30</td>
+                <td>5</td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>25</td>
+                <td>Saved</td>
+            </tr>
+        </table>
+        <button id="confirm">Confirm</button>
+        <button id="save">Save</button>
+        <button id="clear">Clear</button>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/confirm.js"></script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txt1">
+    <input type="text" id="txt2">
+    <input style="background-color: white;" type="button" value="button" id="btn" disabled>
+    <script>
+        let txt1 = document.getElementById("txt1");
+        let txt2 = document.getElementById("txt2");
+        let btn = document.getElementById("btn");
+
+        //input마다 addEventLister을 해줘야함.
+        txt1.addEventListener("keyup", e => {
+            btnInable(e)
+        })
+
+        txt2.addEventListener("keyup", e => {
+            btnInable(e)
+        })
+
+        function btnInable(e) {
+            if (txt1.value == '' || txt2.value == '') {
+                btn.disabled = true
+                btn.style.backgroundColor = "white";
+            } else {
+                console.log('값이 있습니다.')
+                btn.disabled = false
+                btn.style.backgroundColor = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>
